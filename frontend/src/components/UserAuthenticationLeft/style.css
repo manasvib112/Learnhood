@@ -1,0 +1,63 @@
+.user-authentication-left-component {
+  background-color: aqua;
+  width: 30vw; /*view port width*/
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  background-image: url(../../assets/images/bgleft.png);
+  background-size: cover; /*to cover the photo in size*/
+}
+.left-component.element-container {
+  height: 70%;
+  width: 80%;
+  justify-content: space-evenly;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+.left-component.element-container h1,
+.left-component.element-container h2,
+.left-component.element-container span {
+  color: white;
+}
+
+.left-component.element-container img {
+  width: 70px;
+  height: 70px;
+}
+.left-component.element-container h1 {
+  font-family: "Sacramento", cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 3rem;
+  line-height: 4.5rem;
+}
+.left-component.element-container h2 {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+.left-component.element-container span {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+}
+.left-component.element-container button{
+  background: #FF005C;
+
+font-family: Raleway;
+font-style: normal;
+font-weight: 700;
+font-size: 15px;
+line-height: 18px;
+text-align: right;
+
+color: #FFFFFF;
+}

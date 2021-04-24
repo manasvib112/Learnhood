@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "notes",
+  "info": {
+    "name": "Notes",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "subject": {
+      "type": "string",
+      "required": true
+    },
+    "userName": {
+      "type": "string",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

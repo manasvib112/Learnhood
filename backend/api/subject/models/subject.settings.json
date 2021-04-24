@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "subjects",
+  "info": {
+    "name": "subject"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

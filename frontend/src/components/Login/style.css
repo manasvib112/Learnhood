@@ -1,0 +1,58 @@
+.login-container{
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-content: center;
+align-items: center; 
+height: 100%;
+width: 100%;
+background: #FFFFFF;
+border-radius: 22px;
+}
+
+.login-container input{
+    width: 80%;
+    margin: 1rem 0;
+    height: 1.4rem;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #929292;
+    font-size: 1.2rem;
+}
+.login-container button{
+width: 100px;
+height: 30px;
+background: #2A0C59;
+
+font-family: Raleway;
+font-style: normal;
+font-weight: 600;
+font-size: 15px;
+line-height: 18px;
+/* identical to box height */
+text-align: center;
+margin-top: 1rem;
+
+color: #FFFFFF;
+}
+.login-container span {
+font-family: Raleway;
+margin-top: 1rem;
+font-style: normal;
+font-weight: 700;
+font-size: 1rem;
+line-height: 14px;
+text-align: center;
+color:black;
+}
+.login-container a{
+font-family: Raleway;
+font-style: normal;
+font-weight: 600;
+font-size: 1rem;
+line-height: 14px;
+text-align: center;
+margin-top: 1rem;
+
+color: #FF005C;
+}
