@@ -11,17 +11,49 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "subject": {
-      "type": "string",
-      "required": true
-    },
-    "userName": {
-      "type": "string",
-      "required": true
-    },
     "title": {
       "type": "string",
       "required": true
+    },
+    "subject": {
+      "model": "subject"
+    },
+    "branch": {
+      "model": "branch"
+    },
+    "image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "source": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "semester": {
+      "type": "enumeration",
+      "enum": [
+        "first",
+        "second",
+        "third",
+        "fourth",
+        "fifth",
+        "sixth",
+        "seventh",
+        "eighth"
+      ]
     }
   }
 }
