@@ -10,6 +10,7 @@ import Popper from '@material-ui/core/Popper'
 import MenuItem from '@material-ui/core/MenuItem'
 import MenuList from '@material-ui/core/MenuList'
 import { makeStyles } from '@material-ui/core/styles'
+import bg from '../../assets/images/headerbg.png'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -20,9 +21,10 @@ const useStyles = makeStyles((theme) => ({
   }
 }))
 
-const Header = (props) => {
+const Header = ({ background }) => {
   const username = JSON.parse(localStorage['user']).firstname
   const classes = useStyles()
+
   const [open, setOpen] = React.useState(false)
   const anchorRef = React.useRef(null)
   const history = useHistory()
@@ -59,10 +61,13 @@ const Header = (props) => {
     prevOpen.current = open
   }, [open])
   return (
-    <div className='nav-bar'>
+    <div
+      className='nav-bar'
+      style={background ? { backgroundImage: `url(${bg})` } : null}
+    >
       <div className='images-row'>
         <div className='left-side'>
-          <img src={Logo} />
+          <img src={Logo} alt='learnhood' />
           <span class='logo'>Learnhood</span>
         </div>
         <div className='right-side'>
@@ -76,6 +81,7 @@ const Header = (props) => {
             aria-haspopup='true'
             onClick={handleToggle}
             src={Ellipse}
+            alt='learnhooud'
           />
           <Popper
             open={open}

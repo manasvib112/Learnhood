@@ -19,7 +19,7 @@ function App() {
           <PrivateRoute path='/notes' component={NotesHome} exact />
           <PrivateRoute path='/papers' component={PapersPage} exact />
           <PrivateRoute
-            path='/papers/:year'
+            path='/papers/year/:year'
             component={PapersCataloguePrimary}
             exact
           />
