@@ -5,8 +5,8 @@
 }
 .cat-main {
   padding: 0 20px;
-  height: 100vh;
-  margin-left: 20vw;
+  min-height: 100vh;
+  margin-left: 15vw;
   padding-top: 16vh;
   width: 100%;
   display: flex;

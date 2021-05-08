@@ -3,7 +3,7 @@ axios.defaults.baseURL = 'http://localhost:1337'
 
 class RestClient {
   static endPoint
-  constructor(token) {
+  constructor(token = localStorage['token']) {
     this.token = token
   }
   get(query) {
