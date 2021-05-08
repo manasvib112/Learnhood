@@ -1,21 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
-* {
-  /*to select all the elements and apply properties on them*/
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-span.error-message {
-  color: #cc0033;
-  display: inline-block;
-  font-size: 12px;
-  line-height: 15px;
-  margin: 5px 0 0;
-}
-
-.grid {
+.paper-grid {
+  /* display: grid;
+  height: 100%;
+  grid-template-columns: repeat(6, auto); */
   background-color: rgba(255, 255, 255, 0.393);
   display: grid;
   width: 100%;
@@ -23,13 +9,13 @@ span.error-message {
 }
 
 @media screen and (max-width: 1200px) {
-  .grid {
+  .paper-grid {
     grid-template-columns: repeat(5, 1fr);
   }
 }
 
 @media screen and (max-width: 1000px) {
-  .grid {
+  .paper-grid {
     grid-template-columns: repeat(4, 1fr);
   }
 }
@@ -45,7 +31,7 @@ span.error-message {
   }
 }
 @media screen and (max-width: 480px) {
-  .grid {
+  .paper-grid {
     display: flex;
     align-content: center;
     align-items: center;

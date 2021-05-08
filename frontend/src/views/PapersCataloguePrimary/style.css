@@ -27,12 +27,12 @@
   align-content: center;
   justify-content: center;
 }
-.cat-main .term-paper-row .term-paper img {
-  max-height: 90%;
+.cat-main .term-paper-row .term-paper a img {
+  max-height: 45vh;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
-.cat-main .term-paper-row .term-paper img:hover {
+.cat-main .term-paper-row .term-paper a img:hover {
   transform: scale(1.04, 1.04);
 }
 

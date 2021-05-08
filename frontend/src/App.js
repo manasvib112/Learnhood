@@ -7,6 +7,7 @@ import PrivateRoute from './components/PrivateRoute'
 import NotesHome from './views/NotesHome'
 import PapersPage from './views/PapersPage'
 import PapersCataloguePrimary from './views/PapersCataloguePrimary'
+import PaperCatalogueSecondary from './views/PaperCatalogueSecondary'
 
 axios.defaults.baseURL = 'http://localhost:1337'
 function App() {
@@ -21,6 +22,11 @@ function App() {
           <PrivateRoute
             path='/papers/year/:year'
             component={PapersCataloguePrimary}
+            exact
+          />
+          <PrivateRoute
+            path='/papers/cat/:year/:term'
+            component={PaperCatalogueSecondary}
             exact
           />
           <Route path='/login' component={UserAuthentication} exact />

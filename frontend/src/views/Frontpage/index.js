@@ -8,7 +8,7 @@ import background from '../../assets/images/background1.png'
 const FrontPage = () => {
   return (
     <div className='upper-page'>
-      <Header username='Manasvi' />
+      <Header />
       <Banner picture={picture} background={background} />
       <div className='bottom-page'>
         <FrontPageBlock
@@ -19,6 +19,7 @@ const FrontPage = () => {
         <FrontPageBlock
           name='Papers'
           text='Browse or share handmade Papers. Find your notes on this platform.'
+          path='/papers'
         />
         <FrontPageBlock
           name='Notes'
