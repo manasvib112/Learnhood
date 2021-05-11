@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "papers",
   "info": {
-    "name": "Paper"
+    "name": "Paper",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -13,6 +14,37 @@
     "name": {
       "type": "string",
       "required": true
+    },
+    "year": {
+      "type": "enumeration",
+      "enum": [
+        "one",
+        "two",
+        "three",
+        "four"
+      ]
+    },
+    "semester": {
+      "type": "enumeration",
+      "enum": [
+        "one",
+        "two",
+        "three",
+        "four",
+        "five",
+        "six",
+        "seven",
+        "eight"
+      ]
+    },
+    "branches": {
+      "collection": "branch"
+    },
+    "subjects": {
+      "collection": "subject"
+    },
+    "categories": {
+      "collection": "category"
     }
   }
 }

@@ -519,7 +519,6 @@
           "id",
           "title",
           "Description",
-          "Year",
           "Source"
         ],
         "properties": {
@@ -530,9 +529,6 @@
             "type": "string"
           },
           "Description": {
-            "type": "string"
-          },
-          "Year": {
             "type": "string"
           },
           "branch": {
@@ -546,6 +542,28 @@
               },
               "name": {
                 "type": "string"
+              },
+              "year": {
+                "type": "string",
+                "enum": [
+                  "one",
+                  "two",
+                  "three",
+                  "four"
+                ]
+              },
+              "semester": {
+                "type": "string",
+                "enum": [
+                  "one",
+                  "two",
+                  "three",
+                  "four",
+                  "five",
+                  "six",
+                  "seven",
+                  "eight"
+                ]
               },
               "published_at": {
                 "type": "string"
@@ -643,6 +661,28 @@
                 "name": {
                   "type": "string"
                 },
+                "year": {
+                  "type": "string",
+                  "enum": [
+                    "one",
+                    "two",
+                    "three",
+                    "four"
+                  ]
+                },
+                "semester": {
+                  "type": "string",
+                  "enum": [
+                    "one",
+                    "two",
+                    "three",
+                    "four",
+                    "five",
+                    "six",
+                    "seven",
+                    "eight"
+                  ]
+                },
                 "published_at": {
                   "type": "string"
                 },
@@ -725,6 +765,54 @@
               }
             }
           },
+          "year": {
+            "type": "string",
+            "enum": [
+              "one",
+              "two",
+              "three",
+              "four"
+            ]
+          },
+          "semester": {
+            "type": "string",
+            "enum": [
+              "one",
+              "two",
+              "three",
+              "four",
+              "five",
+              "six",
+              "seven",
+              "eight"
+            ]
+          },
+          "categories": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "name"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -734,17 +822,13 @@
       "NewBooks": {
         "required": [
           "title",
-          "Description",
-          "Year"
+          "Description"
         ],
         "properties": {
           "title": {
             "type": "string"
           },
           "Description": {
-            "type": "string"
-          },
-          "Year": {
             "type": "string"
           },
           "branch": {
@@ -755,6 +839,34 @@
             "default": 0
           },
           "subject": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "year": {
+            "type": "string",
+            "enum": [
+              "one",
+              "two",
+              "three",
+              "four"
+            ]
+          },
+          "semester": {
+            "type": "string",
+            "enum": [
+              "one",
+              "two",
+              "three",
+              "four",
+              "five",
+              "six",
+              "seven",
+              "eight"
+            ]
+          },
+          "categories": {
             "type": "array",
             "items": {
               "type": "string"

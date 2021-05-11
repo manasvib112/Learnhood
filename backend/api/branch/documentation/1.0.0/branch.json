@@ -526,6 +526,28 @@
           "name": {
             "type": "string"
           },
+          "year": {
+            "type": "string",
+            "enum": [
+              "one",
+              "two",
+              "three",
+              "four"
+            ]
+          },
+          "semester": {
+            "type": "string",
+            "enum": [
+              "one",
+              "two",
+              "three",
+              "four",
+              "five",
+              "six",
+              "seven",
+              "eight"
+            ]
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -539,6 +561,28 @@
         "properties": {
           "name": {
             "type": "string"
+          },
+          "year": {
+            "type": "string",
+            "enum": [
+              "one",
+              "two",
+              "three",
+              "four"
+            ]
+          },
+          "semester": {
+            "type": "string",
+            "enum": [
+              "one",
+              "two",
+              "three",
+              "four",
+              "five",
+              "six",
+              "seven",
+              "eight"
+            ]
           },
           "published_at": {
             "type": "string",

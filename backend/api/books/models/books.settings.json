@@ -19,10 +19,6 @@
       "type": "string",
       "required": true
     },
-    "Year": {
-      "type": "string",
-      "required": true
-    },
     "branch": {
       "model": "branch"
     },
@@ -50,6 +46,31 @@
       ],
       "plugin": "upload",
       "required": false
+    },
+    "year": {
+      "type": "enumeration",
+      "enum": [
+        "one",
+        "two",
+        "three",
+        "four"
+      ]
+    },
+    "semester": {
+      "type": "enumeration",
+      "enum": [
+        "one",
+        "two",
+        "three",
+        "four",
+        "five",
+        "six",
+        "seven",
+        "eight"
+      ]
+    },
+    "categories": {
+      "collection": "category"
     }
   }
 }

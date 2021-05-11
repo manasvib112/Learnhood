@@ -54,6 +54,15 @@
         "seventh",
         "eighth"
       ]
+    },
+    "branches": {
+      "collection": "branch"
+    },
+    "subjects": {
+      "collection": "subject"
+    },
+    "category": {
+      "model": "category"
     }
   }
 }

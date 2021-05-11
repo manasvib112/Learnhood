@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "years",
+  "collectionName": "categories",
   "info": {
-    "name": "Year"
+    "name": "category"
   },
   "options": {
     "increments": true,
@@ -10,7 +10,7 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "FirstYear": {
+    "name": {
       "type": "string",
       "required": true
     }

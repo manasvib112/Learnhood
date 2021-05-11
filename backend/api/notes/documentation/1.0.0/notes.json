@@ -539,6 +539,28 @@
               "name": {
                 "type": "string"
               },
+              "year": {
+                "type": "string",
+                "enum": [
+                  "one",
+                  "two",
+                  "three",
+                  "four"
+                ]
+              },
+              "semester": {
+                "type": "string",
+                "enum": [
+                  "one",
+                  "two",
+                  "three",
+                  "four",
+                  "five",
+                  "six",
+                  "seven",
+                  "eight"
+                ]
+              },
               "published_at": {
                 "type": "string"
               },
@@ -561,6 +583,28 @@
               },
               "name": {
                 "type": "string"
+              },
+              "year": {
+                "type": "string",
+                "enum": [
+                  "one",
+                  "two",
+                  "three",
+                  "four"
+                ]
+              },
+              "semester": {
+                "type": "string",
+                "enum": [
+                  "one",
+                  "two",
+                  "three",
+                  "four",
+                  "five",
+                  "six",
+                  "seven",
+                  "eight"
+                ]
               },
               "published_at": {
                 "type": "string"
@@ -726,6 +770,125 @@
               "eighth"
             ]
           },
+          "branches": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "name"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "year": {
+                  "type": "string",
+                  "enum": [
+                    "one",
+                    "two",
+                    "three",
+                    "four"
+                  ]
+                },
+                "semester": {
+                  "type": "string",
+                  "enum": [
+                    "one",
+                    "two",
+                    "three",
+                    "four",
+                    "five",
+                    "six",
+                    "seven",
+                    "eight"
+                  ]
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "subjects": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "name"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "year": {
+                  "type": "string",
+                  "enum": [
+                    "one",
+                    "two",
+                    "three",
+                    "four"
+                  ]
+                },
+                "semester": {
+                  "type": "string",
+                  "enum": [
+                    "one",
+                    "two",
+                    "three",
+                    "four",
+                    "five",
+                    "six",
+                    "seven",
+                    "eight"
+                  ]
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "category": {
+            "required": [
+              "id",
+              "name"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -761,6 +924,21 @@
               "seventh",
               "eighth"
             ]
+          },
+          "branches": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "subjects": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "category": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",
