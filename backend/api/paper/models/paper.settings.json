@@ -45,6 +45,14 @@
     },
     "categories": {
       "collection": "category"
+    },
+    "term": {
+      "type": "enumeration",
+      "enum": [
+        "one",
+        "two",
+        "three"
+      ]
     }
   }
 }

@@ -15,27 +15,9 @@
       "type": "string",
       "required": true
     },
-    "year": {
-      "type": "enumeration",
-      "enum": [
-        "one",
-        "two",
-        "three",
-        "four"
-      ]
-    },
-    "semester": {
-      "type": "enumeration",
-      "enum": [
-        "one",
-        "two",
-        "three",
-        "four",
-        "five",
-        "six",
-        "seven",
-        "eight"
-      ]
+    "code": {
+      "type": "string",
+      "required": true
     }
   }
 }

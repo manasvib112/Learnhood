@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "05/11/2021 6:32:50 PM"
+    "x-generation-date": "05/12/2021 1:06:43 AM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -5232,7 +5232,8 @@
           "branch": {
             "required": [
               "id",
-              "name"
+              "name",
+              "code"
             ],
             "properties": {
               "id": {
@@ -5241,27 +5242,8 @@
               "name": {
                 "type": "string"
               },
-              "year": {
-                "type": "string",
-                "enum": [
-                  "one",
-                  "two",
-                  "three",
-                  "four"
-                ]
-              },
-              "semester": {
-                "type": "string",
-                "enum": [
-                  "one",
-                  "two",
-                  "three",
-                  "four",
-                  "five",
-                  "six",
-                  "seven",
-                  "eight"
-                ]
+              "code": {
+                "type": "string"
               },
               "published_at": {
                 "type": "string"
@@ -5380,6 +5362,15 @@
                     "seven",
                     "eight"
                   ]
+                },
+                "branches": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "category": {
+                  "type": "string"
                 },
                 "published_at": {
                   "type": "string"
@@ -5585,7 +5576,8 @@
       "Branch": {
         "required": [
           "id",
-          "name"
+          "name",
+          "code"
         ],
         "properties": {
           "id": {
@@ -5594,27 +5586,8 @@
           "name": {
             "type": "string"
           },
-          "year": {
-            "type": "string",
-            "enum": [
-              "one",
-              "two",
-              "three",
-              "four"
-            ]
-          },
-          "semester": {
-            "type": "string",
-            "enum": [
-              "one",
-              "two",
-              "three",
-              "four",
-              "five",
-              "six",
-              "seven",
-              "eight"
-            ]
+          "code": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",
@@ -5624,33 +5597,15 @@
       },
       "NewBranch": {
         "required": [
-          "name"
+          "name",
+          "code"
         ],
         "properties": {
           "name": {
             "type": "string"
           },
-          "year": {
-            "type": "string",
-            "enum": [
-              "one",
-              "two",
-              "three",
-              "four"
-            ]
-          },
-          "semester": {
-            "type": "string",
-            "enum": [
-              "one",
-              "two",
-              "three",
-              "four",
-              "five",
-              "six",
-              "seven",
-              "eight"
-            ]
+          "code": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",
@@ -5749,6 +5704,15 @@
                   "eight"
                 ]
               },
+              "branches": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "category": {
+                "type": "string"
+              },
               "published_at": {
                 "type": "string"
               },
@@ -5763,7 +5727,8 @@
           "branch": {
             "required": [
               "id",
-              "name"
+              "name",
+              "code"
             ],
             "properties": {
               "id": {
@@ -5772,27 +5737,8 @@
               "name": {
                 "type": "string"
               },
-              "year": {
-                "type": "string",
-                "enum": [
-                  "one",
-                  "two",
-                  "three",
-                  "four"
-                ]
-              },
-              "semester": {
-                "type": "string",
-                "enum": [
-                  "one",
-                  "two",
-                  "three",
-                  "four",
-                  "five",
-                  "six",
-                  "seven",
-                  "eight"
-                ]
+              "code": {
+                "type": "string"
               },
               "published_at": {
                 "type": "string"
@@ -5963,7 +5909,8 @@
             "items": {
               "required": [
                 "id",
-                "name"
+                "name",
+                "code"
               ],
               "properties": {
                 "id": {
@@ -5972,27 +5919,8 @@
                 "name": {
                   "type": "string"
                 },
-                "year": {
-                  "type": "string",
-                  "enum": [
-                    "one",
-                    "two",
-                    "three",
-                    "four"
-                  ]
-                },
-                "semester": {
-                  "type": "string",
-                  "enum": [
-                    "one",
-                    "two",
-                    "three",
-                    "four",
-                    "five",
-                    "six",
-                    "seven",
-                    "eight"
-                  ]
+                "code": {
+                  "type": "string"
                 },
                 "published_at": {
                   "type": "string"
@@ -6041,6 +5969,15 @@
                     "seven",
                     "eight"
                   ]
+                },
+                "branches": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "category": {
+                  "type": "string"
                 },
                 "published_at": {
                   "type": "string"
@@ -6179,7 +6116,8 @@
             "items": {
               "required": [
                 "id",
-                "name"
+                "name",
+                "code"
               ],
               "properties": {
                 "id": {
@@ -6188,27 +6126,8 @@
                 "name": {
                   "type": "string"
                 },
-                "year": {
-                  "type": "string",
-                  "enum": [
-                    "one",
-                    "two",
-                    "three",
-                    "four"
-                  ]
-                },
-                "semester": {
-                  "type": "string",
-                  "enum": [
-                    "one",
-                    "two",
-                    "three",
-                    "four",
-                    "five",
-                    "six",
-                    "seven",
-                    "eight"
-                  ]
+                "code": {
+                  "type": "string"
                 },
                 "published_at": {
                   "type": "string"
@@ -6258,6 +6177,15 @@
                     "eight"
                   ]
                 },
+                "branches": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "category": {
+                  "type": "string"
+                },
                 "published_at": {
                   "type": "string"
                 },
@@ -6295,6 +6223,14 @@
                 }
               }
             }
+          },
+          "term": {
+            "type": "string",
+            "enum": [
+              "one",
+              "two",
+              "three"
+            ]
           },
           "published_at": {
             "type": "string",
@@ -6350,6 +6286,14 @@
               "type": "string"
             }
           },
+          "term": {
+            "type": "string",
+            "enum": [
+              "one",
+              "two",
+              "three"
+            ]
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -6396,6 +6340,59 @@
               "eight"
             ]
           },
+          "branches": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "name",
+                "code"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "code": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "category": {
+            "required": [
+              "id",
+              "name"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -6431,6 +6428,15 @@
               "seven",
               "eight"
             ]
+          },
+          "branches": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "category": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",

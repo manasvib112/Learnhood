@@ -553,7 +553,8 @@
             "items": {
               "required": [
                 "id",
-                "name"
+                "name",
+                "code"
               ],
               "properties": {
                 "id": {
@@ -562,27 +563,8 @@
                 "name": {
                   "type": "string"
                 },
-                "year": {
-                  "type": "string",
-                  "enum": [
-                    "one",
-                    "two",
-                    "three",
-                    "four"
-                  ]
-                },
-                "semester": {
-                  "type": "string",
-                  "enum": [
-                    "one",
-                    "two",
-                    "three",
-                    "four",
-                    "five",
-                    "six",
-                    "seven",
-                    "eight"
-                  ]
+                "code": {
+                  "type": "string"
                 },
                 "published_at": {
                   "type": "string"
@@ -632,6 +614,15 @@
                     "eight"
                   ]
                 },
+                "branches": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "category": {
+                  "type": "string"
+                },
                 "published_at": {
                   "type": "string"
                 },
@@ -669,6 +660,14 @@
                 }
               }
             }
+          },
+          "term": {
+            "type": "string",
+            "enum": [
+              "one",
+              "two",
+              "three"
+            ]
           },
           "published_at": {
             "type": "string",
@@ -723,6 +722,14 @@
             "items": {
               "type": "string"
             }
+          },
+          "term": {
+            "type": "string",
+            "enum": [
+              "one",
+              "two",
+              "three"
+            ]
           },
           "published_at": {
             "type": "string",

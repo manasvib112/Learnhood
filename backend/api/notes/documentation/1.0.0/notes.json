@@ -561,6 +561,15 @@
                   "eight"
                 ]
               },
+              "branches": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "category": {
+                "type": "string"
+              },
               "published_at": {
                 "type": "string"
               },
@@ -575,7 +584,8 @@
           "branch": {
             "required": [
               "id",
-              "name"
+              "name",
+              "code"
             ],
             "properties": {
               "id": {
@@ -584,27 +594,8 @@
               "name": {
                 "type": "string"
               },
-              "year": {
-                "type": "string",
-                "enum": [
-                  "one",
-                  "two",
-                  "three",
-                  "four"
-                ]
-              },
-              "semester": {
-                "type": "string",
-                "enum": [
-                  "one",
-                  "two",
-                  "three",
-                  "four",
-                  "five",
-                  "six",
-                  "seven",
-                  "eight"
-                ]
+              "code": {
+                "type": "string"
               },
               "published_at": {
                 "type": "string"
@@ -775,7 +766,8 @@
             "items": {
               "required": [
                 "id",
-                "name"
+                "name",
+                "code"
               ],
               "properties": {
                 "id": {
@@ -784,27 +776,8 @@
                 "name": {
                   "type": "string"
                 },
-                "year": {
-                  "type": "string",
-                  "enum": [
-                    "one",
-                    "two",
-                    "three",
-                    "four"
-                  ]
-                },
-                "semester": {
-                  "type": "string",
-                  "enum": [
-                    "one",
-                    "two",
-                    "three",
-                    "four",
-                    "five",
-                    "six",
-                    "seven",
-                    "eight"
-                  ]
+                "code": {
+                  "type": "string"
                 },
                 "published_at": {
                   "type": "string"
@@ -853,6 +826,15 @@
                     "seven",
                     "eight"
                   ]
+                },
+                "branches": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "category": {
+                  "type": "string"
                 },
                 "published_at": {
                   "type": "string"
